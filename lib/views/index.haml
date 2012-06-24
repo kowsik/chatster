@@ -1,2 +1,20 @@
-%p
-  %span Yo!
+.chatster
+  %form.login
+    %span Nickname
+    %input.nick{type:"text", value:"boo"}
+    %input.submit{type:"submit", value:"Enter"}
+  .chat
+    .area
+    .message
+      %hr
+      %form.text
+        %table
+          %colgroup{span: "1"}
+          %colgroup{span: "1", style: "width:100%"}
+          %tr
+            %td Message
+            %td
+              %input.text{type:"text"}
+            %td
+              %input.submit{type:"submit", value:"Send"}
+
